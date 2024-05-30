@@ -1,0 +1,14 @@
+import java.util.Arrays;
+
+public class Main {
+    public static void main(String[] args) {
+        char[] LargeArray = {
+            'd', 'f', 's', 'A', 'a', 'D', 'c', 'r', 'g',
+            'w', 'q', 'u', 'w', 'w', 'v', 'b', 'x', 'l',
+            'x', 'g', 'y'
+        };
+        
+        Arrays.parallelSort(LargeArray);
+        System.out.println(Arrays.toString(LargeArray));
+    }
+}
