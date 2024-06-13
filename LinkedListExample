@@ -1,0 +1,42 @@
+import java.util.LinkedList;
+import java.util.List;
+
+public class LinkedListExample {
+    public static void main(String[] args) {
+        // Create a LinkedList
+        List<String> linkedList = new LinkedList<>();
+
+        // Add elements to the LinkedList
+        linkedList.add("Apple");
+        linkedList.add("Banana");
+        linkedList.add("Orange");
+        linkedList.add("Grapes");
+
+        // Print all elements in the LinkedList
+        System.out.println("LinkedList elements:");
+        for (String fruit : linkedList) {
+            System.out.println(fruit);
+        }
+
+        // Remove an element from the LinkedList
+        linkedList.remove("Banana");
+
+        // Print all elements in the LinkedList after removal
+        System.out.println("\nLinkedList elements after removal:");
+        for (String fruit : linkedList) {
+            System.out.println(fruit);
+        }
+
+        // Accessing an element at a specific index
+        String firstFruit = linkedList.get(0);
+        System.out.println("\nFirst element in the LinkedList: " + firstFruit);
+
+        // Get the size of the LinkedList
+        int size = linkedList.size();
+        System.out.println("Size of the LinkedList: " + size);
+
+        // Check if the LinkedList contains a specific element
+        boolean containsOrange = linkedList.contains("Orange");
+        System.out.println("Does the LinkedList contain 'Orange'? " + containsOrange);
+    }
+}
